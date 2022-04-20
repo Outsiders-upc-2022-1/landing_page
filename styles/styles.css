@@ -1,13 +1,11 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
-    }
-
+    font-family: 'Roboto', sans-serif;
+}
 
 /*seccion 1*/
 
@@ -21,87 +19,124 @@
     position:relative; 
     
     min-width: 1467px;
-    
     min-height: 900px;
     max-height: 900px;
-    padding: 100px;
+
+    padding-left: 8.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
 }
+
 .content
 {
+    margin-bottom: 10rem;
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 900px;  
 }
-.content .textBox
-{
-    position: relative;
-    max-width: 900px;
-    
-    
-   
-}
+
 .content .textBox h2 
 {
-    position: relative;
     color: white;
-    font-size: 3em;
+    font-size: 2.6rem;
     line-height: 1.5em;
-    font-weight: 1200;
+}
 
-}
-.content .textBox h2 span
-{
-    font-size: 2em;
-}
 .content .textBox p
 {
+    font-weight: 700;
+    font-size: 1.5rem;
     color: white;
 }
 
+/*Header*/
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 8.5rem;
+    display: flex;
+    justify-content: space-between;
+}
 
+header .logo
+{
+    position: relative;
+    max-width: 200px;
+}
+
+header ul
+{
+    align-items: center;
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+header ul li a
+{
+    display: flex;
+    color: #222d33;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-left: 40px;
+    text-decoration: none;
+}
+header ul li a:hover
+{
+    color:ivory;
+}
 
 /*seccion 2*/
 .sec2
 {
     background:linear-gradient( rgb(37, 38, 36),rgb(85, 111, 124));
     min-height:auto;
-    
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
+
 .sec2 .sec2title h1 
 {   
     color: rgb(206, 195, 198);
-    text-align:center;
-    font-size: xx-large;
-    padding-top: 2%;
-}
-.sec2 .sec2title p{
-    color: rgb(206, 195, 198);
     text-align: center;
-    padding-bottom: 2.5%;
+    font-size: 2.1rem;
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
 }
+
 .sec2 .col
 {
-    float: left;
+    display: flex;
     width: 50%;
 }
+
+.sec2 .col div 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .sec2 .col p
 {
+    text-align: center;
+    width: 70%;
     color: rgb(206, 195, 198);
-    text-align: justify left;
-    padding-top: 10%;
-    font-size: 2.5em;
-    line-height: 2.5em;
-    font-weight: 400;
-    
-    
+    font-size: 2rem;
+    line-height: 3rem;
+    font-style: italic;
+    font-weight: 700;
 }
+
 .sec2 .col h3
 {
     color: rgb(206, 195, 198);
@@ -111,6 +146,7 @@
     font-weight: 400;
     
 }
+
 .sec2 .row::after
 {
     content: "";
@@ -120,19 +156,13 @@
 
 .sec2 .f2
 {
-    position: relative;
-    
-    margin-left: 20%;
+    margin-left: 30%;
     max-width: 45%;
     min-height: 375px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.678);
-    
 }
 
-.sec2 a{
-  padding-left: 15%;
 
-}
 /*seccion 3*/
 .sec3
 {
@@ -284,44 +314,6 @@
     padding-top: 15px;
     max-width: 25px;
     margin-right: 25px;
-}
-header
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-}
-
-header .logo
-{
-    position: relative;
-    max-width: 250px;
-}
-header ul
-{
-    position: relative;
-    display: flex;
-}
-header ul li
-{
-    list-style: none;
-}
-header ul li a
-{
-display: inline-block;
-color: black;
-font-weight: 400;
-margin-left: 40px;
-margin-top: 40px;
-text-decoration: none;
-}
-header ul li a:hover
-{
-    color:ivory;
 }
 
 .botones{
