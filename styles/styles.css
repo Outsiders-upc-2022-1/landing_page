@@ -12,86 +12,123 @@
 .sec1
 {
     background-image: url(../media/mo1.jpg);
-    background-repeat: no-repeat fixed;
-    -webkit-background-size: cover;
+    background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 40%;
-    position:relative; 
-    
-    min-width: 1467px;
-    min-height: 900px;
-    max-height: 900px;
-
-    padding-left: 8.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
+    max-height:100vh ;
+    height: 50vw;
+    width: 100%;
 }
 
 .content
 {
-    margin-bottom: 10rem;
-    position: relative;
+    margin: 0;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 900px;  
 }
 
 .content .textBox h2 
 {
+    margin: 10% 0% 0% 10%;
+    max-width: 50%;
     color: white;
-    font-size: 2.6rem;
+    font-size: 3vw;
     line-height: 1.5em;
 }
 
 .content .textBox p
 {
+    margin-left: 10%;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1vw;
     color: white;
 }
 
 /*Header*/
-header
+.header
 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 1.5rem 8.5rem;
     display: flex;
     justify-content: space-between;
+    padding: 0.5rem 2.5rem;
 }
 
-header .logo
+.header .logo
 {
-    position: relative;
-    max-width: 200px;
+    max-width: 20vw;
 }
 
-header ul
+.header ul
 {
     align-items: center;
-    position: relative;
     display: flex;
     list-style: none;
 }
 
-header ul li a
+.header ul li a
 {
-    display: flex;
     color: #222d33;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     margin-left: 40px;
     text-decoration: none;
 }
-header ul li a:hover
+.header ul li a:hover
 {
     color:ivory;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-toggle{
+    margin: 0;
+    color: black;
+    background: none;
+    border: none;
+    font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+    .header{
+        padding: 0;
+    }
+    .menu
+    {
+        background-color: #2c3e50;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        left: 100%;
+        transition: 0.3s;
+    }
+    .visible{
+        background-color: #2c3e50;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        left: 0;
+    }
+    .header ul li a
+    {
+        color: #FFF;
+        font-weight: 700;
+        font-size: 1.5vw;
+        margin-left: 40px;
+        text-decoration: none;
+    }
+    .hamburger{
+        display: flex;
+    }
 }
 
 /*seccion 2*/
